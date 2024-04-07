@@ -1,0 +1,70 @@
+<!-- Use CSS to create a basic image gallery with thumbnail images that enlarge when clicked. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Image Gallery</title>
+  <link rel="stylesheet" href="task_1.css">
+</head>
+<body>
+
+<div class="gallery">
+  <div class="thumbnail">
+    <img src="pexels-pixabay-162140.jpg" alt="Image 1" onclick="openModal('pexels-pixabay-162140.jpg')">
+  </div>
+  <div class="thumbnail">
+    <img src="pexels-chevanon-photography-1108099.jpg" alt="Image 2" onclick="openModal('pexels-chevanon-photography-1108099.jpg')">
+  </div>
+  <div class="thumbnail">
+    <img src="pexels-david-dibert-635499.jpg" alt="Image 3" onclick="openModal('pexels-david-dibert-635499.jpg')">
+  </div>
+  <br>
+  <div class="thumbnail">
+    <img src="pexels-belle-co-847393.jpg" alt="Image 4" onclick="openModal('pexels-belle-co-847393.jpg')">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modalImage">
+</div>
+
+<script src="task_1.js"></script>
+</body>
+</html>
+
+
+
+
+
+<!-- Implement a simple image slideshow that automatically transitions between images  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Slideshow</title>
+  <link rel="stylesheet" href="task_1.css">
+</head>
+<body>
+
+<div class="slideshow-container">
+  <div class="slide fade">
+    <img src="pexels-pixabay-162140.jpg" alt="Slide 1">
+  </div>
+  
+  <div class="slide fade">
+    <img src="pexels-pixabay-34231.jpg" alt="Slide 2">
+  </div>
+  
+  <div class="slide fade">
+    <img src="pexels-pixabay-45853.jpg" alt="Slide 3">
+  </div>
+</div>
+
+<script src="task_1.js"></script>
+</body>
+</html>
